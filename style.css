@@ -1,0 +1,479 @@
+header
+{
+    h1
+    {
+        font-weight: bold; 
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: -2px 5px 2px gray; 
+        font-family: Verdana, sans-serif;
+        width: 100%;
+    }
+}
+
+
+.multi-col {
+    column-count: 2;
+    column-gap: 30px;
+    
+  }
+.multi-col p{
+    text-indent: 0;
+}
+.linie{
+    border-top: 2px solid black;
+    padding-top: 6px;
+}
+
+main{
+    border-top: 2px solid black;
+}
+
+body{
+    background-color: rgb(254, 254, 254);
+    font-family: Verdana, sans-serif;
+    font-size: 22px; 
+    font-weight: normal; 
+    font-style: normal; 
+    a {color: rgb(1, 45, 5); font-size : 18px; font-weight: bold;}
+
+    text-align: justify;   
+    text-indent: 3em;
+    line-height: 110%; 
+
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-bottom:15px;
+    margin-left: 10%;
+    height: 100%;
+    width : 80%;
+}
+
+
+.menu {
+    list-style: none;
+    border: solid rgb(226, 162, 137);
+    overflow: hidden;
+}
+.menu li {
+    float: inline-start;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.menu li a {
+    position: relative; 
+    padding-left: 30px;
+    line-height: 40px;
+    float:inline-start;
+    color: black;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: rgb(232, 215, 209);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(254, 167, 132);
+    z-index: 3;
+    width: 165px;
+}
+.dropdown-content li {
+    display: inline-block; 
+}
+.dropdown-content li a {
+    display: block; 
+    padding: 6px 8px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu li a .icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 3px; 
+    background-color:black; 
+    display: block;
+}
+.menu li a .icon::before, .menu li a .icon::after {
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: black; 
+}
+.menu li a .icon::before {
+    top: -6px; 
+}
+.menu li a .icon::after {
+    bottom: -6px;
+} 
+
+p { 
+    color: black;
+    font-size: 18px;
+  } 
+
+.lista{
+    list-style-type: none;
+    font-size: 1%;
+}  
+.lista li{
+    padding-left: 20px;
+    background-image: url('bullet.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    line-height: 1.2;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -70px;
+    margin-top: 20px;  
+}
+.flex-item {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.flex-item:nth-child(odd) {
+    flex-direction: row-reverse; 
+}
+.text {
+    flex: 1;
+    padding: 0px;
+    font-size: 14px;
+    text-indent: 35px;
+    word-spacing: 2px;
+}
+.text h4 {
+    margin-top: 0; 
+    text-align: center;
+    font-size: 18px;
+}
+.text p {
+    margin-top: -15px; 
+}
+.flex-item img {
+    width: 360px;
+    height: 240px; 
+    object-fit: cover;
+}
+
+img{
+    width: 40%;
+    height: 30%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption{
+    font-size:14px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center; 
+  }
+.container h1{
+    white-space: wrap; 
+    overflow-wrap: break-word;
+    line-height: 120%;
+    font-size: 5vw;
+}
+.container p{
+    font-size: 2vw;
+    line-height: 120%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 85%; 
+    max-width: 900px;
+    text-indent: 0;
+}
+.centered h1, .centered p {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.container img {
+    width :100%;
+    display: block;
+}
+
+
+#vl.background {
+    background: url(panoramicvl.png) no-repeat;
+    border: 2px solid black;
+    position: relative;
+    background-size: cover;
+    line-height: 170%;
+}
+#is.background {
+    background: url(panoramicis.jpeg) no-repeat;
+    border: 2px solid black;
+    position: relative;
+    background-size: cover;
+    line-height: 170%;
+}
+div.transbox {
+    margin: 100px 60px 100px 60px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    position: relative;
+    z-index: 1;
+    text-indent: 0;
+  }
+div.transbox h1 {
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    white-space: wrap;
+    font-size: 4vw;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 10px 5% 10px 5%;
+    margin: 10px 20px 10px 20px;
+    justify-content: center;
+    align-content: center; 
+    position: static;
+}
+.grid-item {
+    text-align: justify;
+}
+.grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.grid-item img {
+    object-fit: cover;
+    border-radius: 4%;
+}
+
+@media (max-width: 900px) {
+    .flex-item:nth-child(n){
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .text {
+        padding: 10px; 
+    }
+}
+
+.fading {
+    position: relative;
+    overflow: hidden;
+}
+.fading img {
+    transition: opacity 0.3s ease; 
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.fading:hover img {
+    opacity: 0.6; 
+}
+
+.tranzitii{
+    transition-delay: 0.5s;
+    transition: padding 2s, opacity 2s;
+}
+.tranzitii:hover {
+    padding: 10px;
+    opacity: 0.5;
+}
+
+.animatie {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    70% {
+      font-size: 150%;
+      margin-left: 25%;
+      width: 150%;
+      color: rgb(254, 167, 132);
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+footer{
+    background-color: rgb(226, 162, 137);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: lighter;
+    p {opacity: 0.6;}
+    text-align: right;
+    padding : 10px;
+    padding-right: 20px;
+}
+
+.revenire{
+    /* text-align: right; */
+    font-size: 14px;
+}
+
+#date-list{
+    font-size: 15px;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(243, 145, 125); 
+    color: rgb(4, 0, 0); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+
+#myBtn:hover {
+    background-color: #a17979; 
+}
+
+h1{
+    cursor: pointer;
+}
+
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+p {
+    transition: color 0.3s;
+}
+
+body.dark-mode p {
+    color: white;
+}
+body.dark-mode a {
+    color: white;
+}
+footer {
+    transition: color 0.3s;
+}
+
+body.dark-mode footer {
+    color: white;
+}
+.menu {
+    transition: color 0.3s;
+}
+
+body.dark-mode .menu li a{
+    color: white;
+}
+
+body.dark-mode .menu li a .icon::before{
+    background-color: white;
+}
+body.dark-mode .menu li a .icon::after{
+    background-color: white;
+}
+body.dark-mode .menu li a .icon{
+    background-color: white;
+}
+body.dark-mode ol li a{
+    color: white;
+}
+body.dark-mode .lista li{
+    padding-left: 20px;
+    background-image: url('bullet-white.png');
+}
+body.dark-mode #date-list{
+    color: white;
+}
+
+#toggle-mode {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color:black;
+    background-color: white;
+}
+
+
+.clock-container {
+    width: 100%;
+    text-align: right;
+    color: white;
+    opacity: 40%;
+}
+
+#clock {
+    font-size: 24px;
+}
+
+form{
+    font-size: 16px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+h4{
+    margin-left: 14%;
+}

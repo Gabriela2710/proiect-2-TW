@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calatorii prin Romania</title>
+        <meta name="autor" content="Vladu Daniela-Gabriela">
+        <meta name="description" content="descriere">
+        <meta name="keywords" content="calatorie Romania destinatii">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "style.css">
+        <link rel="icon" type="image/x-icon" href="romania.jpeg">
+        <script type="text/javascript" src="script.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <nav>
+            <ul class="menu">
+                <li><a href="pagina-pornire.html">Acasă<span class="icon"></span></a></li>
+                <li class="dropdown">
+                    <a href="#">Oltenia</a>
+                    <ul class="dropdown-content">
+                        <li><a href="valcea.html" class="protected-link">Valcea</a></li>
+                        <li><a href="dolj.html">Dolj</a></li>
+                        <li><a href="gorj.html">Gorj</a></li>
+                        <li><a href="mehedinti.html">Mehedinti</a></li>
+                        <li><a href="olt.html">Olt</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Moldova</a>
+                    <ul class="dropdown-content">
+                        <li><a href="iasi.html" class="protected-link">Iași</a></li>
+                        <li><a href="botosani.html">Botosani</a></li>
+                        <li><a href="neamt.html">Neamt</a></li>
+                        <li><a href="bacau.html">Bacau</a></li>
+                        <li><a href="vaslui.html">Vaslui</a></li>
+                        <li><a href="vrancea.html">Vrancea</a></li>
+                        <li><a href="galati.html">Galati</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Muntenia</a>
+                    <ul class="dropdown-content">
+                        <li><a href="prahova.html">Prahova</a></li>
+                        <li><a href="arges.html">Arges</a></li>
+                        <li><a href="braila.html">Braila</a></li>
+                        <li><a href="buzau.html">Buzau</a></li>
+                        <li><a href="calarasi.html">Calarasi</a></li>
+                        <li><a href="dambovita.html">Dambovita</a></li>
+                        <li><a href="giurgiu.html">Giurgiu</a></li>
+                        <li><a href="ialomita.html">Ialomita</a></li>
+                        <li><a href="ilfov.html">Ilfov</a></li>
+                        <li><a href="teleorman.html">Teleorman</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Transilvania</a>
+                    <ul class="dropdown-content">
+                        <li><a href="brasov.html">Brasov</a></li>
+                        <li><a href="sibiu.html">Sibiu</a></li>
+                        <li><a href="alba.html">Alba</a></li>
+                        <li><a href="bihor.html">Bihor</a></li>
+                        <li><a href="bistrita.html">Bistrita</a></li>
+                        <li><a href="cluj.html">Cluj</a></li>
+                        <li><a href="covasna.html">Covasna</a></li>
+                        <li><a href="harghita.html">Harghita</a></li>
+                        <li><a href="hunedoara.html">Hunedoara</a></li>
+                        <li><a href="mures.html">Mures</a></li>
+                        <li><a href="salaj.html">Salaj</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Bucovina</a>
+                    <ul class="dropdown-content">
+                        <li><a href="suceava.html">Suceava</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Dobrogea</a>
+                    <ul class="dropdown-content">
+                        <li><a href="tulcea.html">Tulcea</a></li>
+                        <li><a href="constanta.html">Constanta</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Crisana</a>
+                    <ul class="dropdown-content">
+                        <li><a href="arad.html">Arad</a></li>
+                        <li><a href="oradea.html">Oradea</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Banat</a>
+                    <ul class="dropdown-content">
+                        <li><a href="timis.html">Timis</a></li>
+                        <li><a href="caras.html">Caras</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
+        <button id="toggle-mode">Schimbă Modul(întunecat/zi)</button>
+        <header>
+            <div class = "container">
+                <img src = "panoramic.jpg" alt = " ">
+                <div class="overlay"></div>
+                <div class="centered">
+                    <h1 id = "title"> Călătorii prin România</h1>
+                    <p><b>UN GHID PENTRU A DESCOPERII FRUMUSETILE ROMANIEI</b></p>
+                    <div class="clock-container" id="clockContainer">
+                        <div id="clock"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <div id="mesaj-container"></div>
+            <p class = "linie"></p>
+            <div class = "multi-col" >
+            <p><span class = "animatie">România, o țară plină de farmec și diversitate, este un adevărat paradis pentru călătoriile de neuitat. Situată în inima Europei, această destinație oferă o varietate uluitoare de peisaje naturale, de la vârfuri montane împădurite până la plaje liniștite și delte misterioase.
+                Călătorește în Munții Carpați, unde vei găsi peisaje spectaculoase, poteci montane pitorești și sate tradiționale autentice. Ai ocazia să explorezi castele medievale bine conservate, cum ar fi legendarul Castel Bran, cunoscut sub numele de Castelul lui Dracula, și să te plimbi pe ulițele înguste ale orașelor istorice precum Sighișoara sau Sibiu, unde istoria prinde viață în fiecare colț.
+                Pentru cei pasionați de natură, Delta Dunării oferă o oază de biodiversitate unică, unde poți observa o varietate impresionantă de păsări și animale sălbatice în habitatul lor natural. La fel, Maramureșul îți încântă simțurile cu peisaje rurale idilice, biserici de lemn UNESCO și tradiții ancestrale păstrate cu sfințenie.
+                Dar România nu este doar despre natură și istorie; este și despre cultură și ospitalitate. Bucureștiul, capitala vibrantă, te întâmpină cu viață de noapte agitată, restaurante cu specific local și muzee captivante. Poți să te răsfeți cu delicii culinare autentice, precum mici, sarmale sau plăcinte cu brânză, și să te bucuri de atmosfera caldă și primitoare a localnicilor.
+                Indiferent de destinația aleasă, fiecare colț al României îți va oferi o experiență memorabilă și îți va lăsa amintiri de neprețuit. Așadar, lasă-te cucerit de frumusețea neîmblânzită a acestei țări și pregătește-te pentru o aventură care îți va încânta sufletul și îți va deschide perspectiva asupra lumii. România te așteaptă cu brațele deschise să descoperi toate secretele și comorile sale ascunse!</span></p> 
+            </div>
+            </header>
+        <main>
+            <div class="grid-container"> 
+                <div class="grid-item">
+                    <a href = "valcea.html" class="protected-link">
+                        <div class = "fading">
+                            <img src="valcea.jpg" alt = "Vâlcea" class = "center">
+                        </div>
+                    </a>
+                    <p>Județul Vâlcea, situat în sudul României, încântă prin peisajele sale montane și bogata moștenire culturală. Rezervațiile naturale și mănăstirile medievale, precum Cozia și Horezu, fac din acest județ o destinație de neuitat pentru iubitorii de natură și istorie.</p>
+                </div>
+                <div class="grid-item">
+                    <a href = "iasi.html" class="protected-link">
+                        <div class = "fading">
+                            <img src="iasi.jpeg" alt = "Iasi" class = "center">
+                        </div>
+                    </a>
+                    <p>Iașiul, situat în nord-estul țării, este un centru cultural și istoric deosebit, marcându-se prin arhitectura sa barocă și atmosfera sa academică. Cunoscut pentru Palatul Culturii și Grădina Botanică, Iașiul rămâne o destinație emblematică pentru cei pasionați de artă și istorie.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="timis.jpeg" alt = "Timis" class = "center">
+                    </div>
+                    <p>Județul Timiș, aflat în vestul României, impresionează prin mixul său vibrant de culturi și tradiții. Oradea, reședința județului, te întâmpină cu clădirile sale istorice și atmosfera sa cosmopolită, fiind o destinație ideală pentru explorarea diversității culturale.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="brasov.jpg" alt = "Brasov" class = "center">
+                    </div>
+                    <p>Brașovul, situat în inima Transilvaniei, te cucerește cu atmosfera sa medievală și peisajele montane spectaculoase. De la Castelul Bran la Masivul Postăvaru, județul este o comoară a istoriei și naturii, atrăgând vizitatori din întreaga lume.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="cluj.jpeg" alt = "Cluj" class = "center">
+                    </div>
+                    <p>Județul Cluj, situat în nord-vestul României, este un hub cultural și economic vibrant, renumit pentru universitățile sale de prestigiu și atmosfera sa cosmopolită. Cluj-Napoca, capitala județului, te îmbie să descoperi palatele sale baroce și viața culturală efervescentă.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="sibiu.jpeg" alt = "Sibiu" class = "center">
+                    </div>
+                    <p>Sibiul, aflat în centrul României, este o comoară a patrimoniului cultural și arhitectural. Centrul său medieval bine conservat și atmosfera sa boemă îți oferă o călătorie în timp, iar Transfăgărășanul și Munții Făgăraș adaugă o notă de aventură și frumusețe naturală.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="suceava.jpeg" alt = "Suceava" class = "center">
+                    </div>
+                    <p>Județul Suceava, situat în nordul Moldovei, este un tărâm al istoriei și tradițiilor autentice. Rezervațiile naturale, mănăstirile pictate și cetățile medievale, precum Suceava și Cetatea Neamțului, fac din acest județ o destinație fascinantă pentru iubitorii de istorie și natură.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="maramures.jpeg" alt = "Maramures" class = "center">
+                    </div>
+                    <p>Maramureșul, situat în nordul țării, te întâmpină cu peisaje pitorești și tradiții ancestrale vii. Casele de lemn și biserici vechi de secole, precum și Mocănița, trenul cu abur ce străbate Munții Maramureșului, aduc un farmec aparte acestei regiuni autentice.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="bucuresti.jpeg" alt = "Bucuresti" class = "center">
+                    </div>
+                    <p>Bucureștiul, capitala României, este un amestec fascinant de istorie, cultură și modernitate. De la Palatul Parlamentului la Muzeul Național de Artă, orașul îți dezvăluie bogata sa moștenire și vitalitatea sa urbană, fiind o destinație captivantă pentru explorare.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="prahova.jpeg" alt = "Prahova" class = "center">
+                    </div>
+                    <p>Județul Prahova, aflat în sudul țării, este renumit pentru stațiunile sale montane și peisajele pitorești. Bran, Sinaia și Bușteni sunt doar câteva dintre atracțiile sale remarcabile, atrăgând turiști în căutare de aventură și relaxare în mijlocul naturii.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="constanta.jpeg" alt = "Constanta" class = "center">
+                    </div>
+                    <p> Județul Constanța, situat în sud-estul țării, este o destinație de vacanță ideală, datorită plajelor sale aurii și istoriei sale fascinante. Mamaia, Eforie și Constanța îți oferă experiențe de neuitat la malul mării, completate de vizite la vestigiile istorice, cum ar fi cetatea Tomis.</p>
+                </div>
+                <div class="grid-item">
+                    <div class = "fading">
+                        <img src="oradea.jpeg" alt = "Oradea" class = "center">
+                    </div>
+                    <p>Oradea, aflată în nord-vestul țării, îți dezvăluie farmecul său istoric și influențele arhitecturale variate. De la clădirile baroce la Băile Felix, județul este o destinație fascinantă pentru cei în căutare de relaxare și descoperire culturală.</p>
+                </div>
+            </div> 
+        </main>
+
+    <h5>Recenzii și păreri de la alți utilizatori: </h5>
+    <ul id="date-list"></ul>
+
+    <h4>Formular pentru înregistrare</h2>
+    <div id="form-container"> 
+        <!-- <form id="formular" method="post" action="Form" target="_self" onsubmit="submitForm(event)"> -->
+        <form action="http://localhost:3000/cale" method="GET">
+        <fieldset>
+            <legend>Date personale</legend>
+            <div>
+              <br>
+              <label for = "nume"> Nume: </label>
+              <input type = "text" id = "nume" name = "nume" minlength="3" maxlength="30" required>
+              <br><br>
+              <label for = "prenume"> Prenume: </label>
+              <input type = "text" id = "prenume" name = "prenume" minlength="3" maxlength="30" required>
+              <br><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Date de contact</legend>
+            <div>
+              <br>
+              <label for = "tara"> Țara: </label>
+              <input type = "text" id = "tara" name = "tara" required>
+              <br><br>
+              <label for = "judet"> Județ: </label>
+              <select id = "judet">
+                <option value = "">Please choose an option</option>
+                <option value="Alba">Alba</option>
+                <option value="Arad">Arad</option>
+                <option value="Argeș">Argeș</option>
+                <option value="Bacău">Bacău</option>
+                <option value="Bihor">Bihor</option>
+                <option value="Bistrița-Năsăud">Bistrița-Năsăud</option>
+                <option value="Botoșani">Botoșani</option>
+                <option value="Brașov">Brașov</option>
+                <option value="Brăila">Brăila</option>
+                <option value="Buzău">Buzău</option>
+                <option value="Caraș-Severin">Caraș-Severin</option>
+                <option value="Călărași">Călărași</option>
+                <option value="Cluj">Cluj</option>
+                <option value="Constanța">Constanța</option>
+                <option value="Covasna">Covasna</option>
+                <option value="Dâmbovița">Dâmbovița</option>
+                <option value="Dolj">Dolj</option>
+                <option value="Galați">Galați</option>
+                <option value="Giurgiu">Giurgiu</option>
+                <option value="Gorj">Gorj</option>
+                <option value="Harghita">Harghita</option>
+                <option value="Hunedoara">Hunedoara</option>
+                <option value="Ialomița">Ialomița</option>
+                <option value="Iași">Iași</option>
+                <option value="Ilfov">Ilfov</option>
+                <option value="Maramureș">Maramureș</option>
+                <option value="Mehedinți">Mehedinți</option>
+                <option value="Mureș">Mureș</option>
+                <option value="Neamț">Neamț</option>
+                <option value="Olt">Olt</option>
+                <option value="Prahova">Prahova</option>
+                <option value="Satu Mare">Satu Mare</option>
+                <option value="Sălaj">Sălaj</option>
+                <option value="Sibiu">Sibiu</option>
+                <option value="Suceava">Suceava</option>
+                <option value="Teleorman">Teleorman</option>
+                <option value="Timiș">Timiș</option>
+                <option value="Tulcea">Tulcea</option>
+                <option value="Vaslui">Vaslui</option>
+                <option value="Vâlcea">Vâlcea</option>
+                <option value="Vrancea">Vrancea</option>
+                <option value="Ilfov">Ilfov</option>
+                <option value="Sector 1">Sectorul 1</option>
+                <option value="Sector 2">Sectorul 2</option>
+                <option value="Sector 3">Sectorul 3</option>
+                <option value="Sector 4">Sectorul 4</option>
+                <option value="Sector 5">Sectorul 5</option>
+                <option value="Sector 6">Sectorul 6</option>
+              </select>
+              <br><br>
+              <label for = "nrtel"> Numar de telefon: </label>
+              <input type = "tel" id = "nrtel" name = "nrtel"  required>
+              <br><br>
+              <label for = "mail"> Email: </label>
+              <input type = "email" id = "mail" name = "mail" required>
+              <br><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <br>
+            <legend>Recenzie site </legend>
+            <div>
+            <br>
+            <label for = "recenzie"> Iti poti lasa parerea aici: </label>
+              <textarea id = "recenzie" name = "recenzie" rows = "6" cols = "40"></textarea>
+              <br><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Abonament </legend>
+            <div>
+            <br>
+            <label for = "noutate"> Vrei sa fii la curent cu noutățile? </label>
+              <br><br>
+              <input type="radio" id="da" name="noutate" value="da" checked>
+              <label for="da">Da</label>
+              <input type="radio" id="nu" name="noutate" value="nu">
+              <label for="nu">Nu</label>
+              <br><br>
+          </div>
+        </fieldset>
+        <input type="submit" value="Trimite formular">
+    </form>
+    <br><br>
+    </div>
+        <footer>
+            <p>©2024 toate drepturile rezervate.<br>Pagina realizata de Vladu Daniela-Gabriela.</p>
+        </footer>
+    </body>
+</html>
